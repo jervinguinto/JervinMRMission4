@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/56b488e7-f476-4aab-b5e9-dc84da065596/AppServices/subscriptions/56b488e7-f476-4aab-b5e9-dc84da065596/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/MissionFourAPI",
+    "appService.deploySubpath": "."
+}
