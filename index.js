@@ -13,18 +13,31 @@ server.listen(PORT, () => {
   console.log("listening to port", PORT);
 });
 
-server.get("/carValue", (res) => {
+server.get("/", (req,res) => {
   res.send("this is working");
 });
 
-function carValue(req, res) {
+// function carValue(req, res) {
+//   let carModel;
+//   let carYear;
+//   let carValue;
+//   ({ carModel, carYear } = req.body);
+
+//   carValue = calculatedCarValue(carModel, carYear);
+//   res.json(carValue);
+// }
+
+// server.post("/carValue",carValue);
+
+
+server.post("/carValue",(req, res) =>{
   let carModel;
   let carYear;
   let carValue;
   ({ carModel, carYear } = req.body);
 
-  carValue = calculatedCarValue(carModel, carYear);
-  res.json(carValue);
+  res.json(calculatedCarValue(carModel, carYear));
+  
 }
 
-server.post("/carValue", carValue);
+)
